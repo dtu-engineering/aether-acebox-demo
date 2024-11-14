@@ -6,9 +6,6 @@
     name: dt-operator
 
 - include_role:
-    name: app-easytravel
-
-- include_role:
     name: app-easytrade
 
 - include_role:
