@@ -1,16 +1,3 @@
 ---
-- include_role:
-    name: microk8s
-
-- include_role:
-    name: dt-operator
-
-- include_role:
-    name: app-easytrade
-
-- include_role:
-    name: dashboard
-    tasks_from: template-values-file
-
-- include_role:
-    name: dashboard
+- debug:
+    msg: "Hello from your aether-acebox-demo usecase!"
