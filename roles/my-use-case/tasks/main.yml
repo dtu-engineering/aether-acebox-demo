@@ -1,3 +1,11 @@
 ---
 - debug:
-    msg: "Hello from your aether-acebox-demo usecase!"
+    msg: "Initiating 5 minute pause and then failing"
+
+- name: Pause for 5 minutes
+  ansible.builtin.pause:
+    minutes: 5
+
+- name: Fail the playbook intentionally
+  ansible.builtin.fail:
+    msg: "Exiting with failure as intended."
